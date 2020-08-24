@@ -10,6 +10,7 @@ class Deck:
                 else:
                     value = face
                 self.cards.append(Card(name, value))
+                
         self.shuffle()
 
     def shuffle(self):
@@ -19,7 +20,7 @@ class Deck:
         for card in self.cards:
             print(card.name)
 
-    def pick_one(self):
+    def get_one(self):
         return self.cards.pop(0)
 
 
